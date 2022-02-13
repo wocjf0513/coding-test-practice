@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Main{
+public class 주유소{
 
     static int[] dis_nums;
     static int[] cos_nums;
@@ -40,7 +40,6 @@ public class Main{
                 dis_sum+=dis_nums[i];
             }
             cos_sum+=cos_nums[origin]*dis_sum;
-            System.out.println(origin+" "+next+" "+cos_sum);
             origin=next;       
         }
         System.out.println(cos_sum);
