@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class Main {
+public class 적록색약 {
 
     static int[][] check;
     static int count[]=new int[2];
