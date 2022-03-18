@@ -11,7 +11,6 @@ public class 카드구매하기 {
         int input[]=Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
         int max[]=new int[n];
 
-        int temp=0;
 
         for(int i=0; i<n; i++){
             if(i==0)

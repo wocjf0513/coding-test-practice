@@ -39,6 +39,7 @@ public class 오르막수 {
 		dp_sum=dp_sum.add(dp[n][i]);
 
 		System.out.println(dp_sum.remainder(new BigInteger("10007")));
+		sc.close();
 		
 		
 		

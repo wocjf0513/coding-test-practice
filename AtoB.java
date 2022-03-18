@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class AtoB {
 
     static long min=Integer.MAX_VALUE;
     public static void main(String[] args) throws IOException {
@@ -15,6 +15,7 @@ public class Main {
         System.out.println(-1);
         else
         System.out.println(min);
+        sc.close();
     }
     public static void bfs(long source, long goal, long count){
         if(source>goal)

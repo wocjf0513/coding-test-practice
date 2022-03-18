@@ -37,7 +37,6 @@ public class 스티커 {
 
         if(num>=1)
         {
-            int answer=0;
 
             dp_arr[0][0]=num_arr[0][0];
             dp_arr[1][0]=num_arr[1][0];
