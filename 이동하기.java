@@ -43,6 +43,7 @@ public class 이동하기 {
         System.out.println(dp[y-1][x-1]);
         
 
+        sc.close();
         
     }
     

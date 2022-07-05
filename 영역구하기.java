@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Main {
+public class 영역구하기 {
     static int input[][];
     static int dir[]={0,0,-1,+1};
     static int check[][];
@@ -47,6 +47,7 @@ public class Main {
         Collections.sort(list);
         System.out.println(block_n);
         list.forEach(e->System.out.print(e+" "));
+        sc.close();
         
     }
     public static void bfs(int y,int x,int lim_y, int lim_x)
