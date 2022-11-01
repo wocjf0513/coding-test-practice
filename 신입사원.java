@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +14,7 @@ import java.util.StringTokenizer;
 public class 신입사원 {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         //1차 서류 2차 면접
         //모든 지원자와 비교했을 때, 떨어지면 안된다.
         //서류만 sorting해서 맨앞에 있는 지원자는 다음 지원보다 면접 점수가 다 높아야 됨.
@@ -45,7 +46,6 @@ public class 신입사원 {
         }
         System.out.println(result);
         }
-        sc.close();
 
     }
 }
