@@ -18,7 +18,7 @@ public class 저울 {
             input[i]=Integer.parseInt(st.nextToken());
         }
 
-        //input[i]<=m+1 면 m까지 조합가능
+        //input[i]<=m+1 면 m+1까지 조합가능
         //input[i]>m+1 면 m+1 조합 안됨.
 
         Arrays.sort(input);
@@ -33,6 +33,7 @@ public class 저울 {
                     break;
                 }
             }
-        
+        //1 1 2 3 6 7 30
+        //1 2 4 7 13 20
     }
 }
