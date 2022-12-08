@@ -41,7 +41,6 @@ public class 가장큰정사각형 {
 
                 if(0<=newY && newY<n && 0<=newX && newX<m && dp[i][j]==1)
                 {
-                    System.out.println(i+" "+j);
                     int cnt=Math.min(dp[newY][j],dp[i][newX]);
 
                     while(cnt>0){
