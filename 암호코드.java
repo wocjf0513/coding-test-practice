@@ -11,6 +11,17 @@ public class 암호코드 {
         long[] dp=new long[5001];
         dp[0]=dp[1]=1;
 
+
+        
+
+
+        if(code.length()<=2){
+            if(code.charAt(0)=='0'){
+                System.out.println(0);
+                return;
+            }
+        }
+
         for(int i=2; i<=code.length(); i++){
             cur=code.charAt(i-1);
             pre=code.charAt(i-2);
