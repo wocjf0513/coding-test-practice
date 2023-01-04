@@ -36,23 +36,6 @@ public class 토마토 {
             }
         }
 
-        
-        // for(int i=1; i<=h; i++){
-        //     for(int j=1; j<=y; j++){        
-        //         for(int k=1; k<=x; k++){
-        //             System.out.print(   box[i][j][k]);
-                 
-        //         }
-        //         System.out.println();
-        //     }
-        // }
-        
-        //높이 가로 세로
-
-        //원본과 copy할거
-        //변화가 됐는지 체크
-        
-
         int day=-1;
         
     while(change){
@@ -68,14 +51,6 @@ public class 토마토 {
                         bfs(i,j,k,check,newbox);
                     }
                 }
-            }
-        }
-        for(int i=1; i<=h; i++){
-            for(int j=1; j<=y; j++){        
-                for(int k=1; k<=x; k++){
-                    System.out.print(newbox[i][j][k]+" ");
-                }
-                System.out.println();
             }
         }
         

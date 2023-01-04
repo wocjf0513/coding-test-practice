@@ -18,7 +18,8 @@ public class ACMCraft {
         StringTokenizer st;
 
         for(int tN=1; tN<=t; tN++){
-            st=new StringTokenizer(br.readLine());
+        
+        st=new StringTokenizer(br.readLine());
         int bN=Integer.parseInt(st.nextToken());
         int sN=Integer.parseInt(st.nextToken());
 
