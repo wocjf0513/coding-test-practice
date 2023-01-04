@@ -3,12 +3,13 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class 크게만들기 {
+
+    //최대 nlogn
 
     public static void main(String[] args) throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -18,25 +19,34 @@ public class 크게만들기 {
         int k=Integer.parseInt(st.nextToken());
         String num=br.readLine();
 
-        int idx=0;
-
-        for(int i=0; i<num.length()-k; i++){
-            int max=0;
-            for(int j=idx; j<=i+k; j++){
-                if(max<num.charAt(j)-'0'){
-                    max=num.charAt(j)-'0';
-                    idx=j+1;
-                }
-            }
         
-            bw.append(max+"");
+        Deque<Integer> dq=new LinkedList<>();
+
+        //4 2 
+        //2194 
+
+        for(int i=0; i<num.length(); i++){
+            int getN=num.charAt(i)-'0';
+
+            while(!dq.isEmpty() && k>0 && getN>dq.getLast()){
+                dq.removeLast();
+                k--;
+            }
+
+            dq.addLast(getN);
+
         }
 
-      
-        
+        int len=dq.size();
+        for(int i=0; i<len-k; i++){
+            bw.append(dq.poll()+"");
+        }
         bw.flush();
         bw.close();
         br.close();
+
+        
+
 
         //가장 큰 숫자(뒤에 남아야 되는 개수이상 있는)
         //찾은 숫자 앞에는 안보기
