@@ -39,7 +39,6 @@ public class 가르침 {
             }       
             
             words.add(newStr);
-            System.out.println(newStr);
         }
 
         int alphaCheck=1<<26;
