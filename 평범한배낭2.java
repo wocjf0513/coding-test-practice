@@ -18,60 +18,72 @@ public class 평범한배낭2 {
         class Stuff{
             int weight;
             int happy;
-            int count;
-            Stuff(int w, int h, int c){
+            Stuff(int w, int h){
                 weight=w;
                 happy=h;
-                count=c;
             }
         }
 
         ArrayList<Stuff> sList=new ArrayList<>();
+        sList.add(new Stuff(0, 0));
 
         for(int i=1; i<=n; i++){
             st=new StringTokenizer(br.readLine());
             int w=Integer.parseInt(st.nextToken());
             int h=Integer.parseInt(st.nextToken());
             int c=Integer.parseInt(st.nextToken());
-            sList.add(new Stuff(w, h, c ));
+
+          
+
+            int temp=1;
+            int sum=0;
+            //remain 3  2 0
+            //c가 13 = 1 + 2 + 4 + 6
+
+            // temp 1 2 4 8
+
+            // sum 1 3 7 15
+
+            // 13
+            while(true){
+                sum+=temp;
+                if(sum>=c){
+                    if(sum==c){
+                        sList.add(new Stuff(w*temp, h*temp));
+                        break;
+                    }
+                    else{
+                        temp=c-(sum-temp);
+                        sList.add(new Stuff(w*temp, h*temp));
+                        break;
+                    }
+                }
+                else{
+                    sList.add(new Stuff(w*temp, h*temp));
+                }
+                temp=temp*2;
+            }
         }
 
 
-        int[][] dp=new int[n+1][m+1];
+        int[][] dp=new int[sList.size()][10001];
         
-        int[] pre=new int[m+1];
 
-        for(int i=1; i<=n; i++){
-            for(int c=0; c<sList.get(i-1).count; c++){
-                if(c==0)
-                for(int j=1; j<=m; j++){
-                    if(j<sList.get(i-1).weight)
+        for(int i=1; i<sList.size(); i++){
+                for(int j=1; j<=10000; j++){
+                    if(j<sList.get(i).weight)
                     dp[i][j]=dp[i-1][j];
                     else{
-                        dp[i][j]=Math.max(dp[i-1][j],dp[i-1][j-sList.get(i-1).weight]+sList.get(i-1).happy);
+                        dp[i][j]=Math.max(dp[i-1][j],dp[i-1][j-sList.get(i).weight]+sList.get(i).happy);
                     }
-                    pre[j]=dp[i][j];
-                }
-                else
-                for(int j=1; j<=m; j++){
-                    if(j<sList.get(i-1).weight)
-                    dp[i][j]=pre[j];
-                    else{
-                        dp[i][j]=Math.max(pre[j],pre[j-sList.get(i-1).weight]+sList.get(i-1).happy);
-                    }    
-                }
-                for(int j=1; j<=m; j++){
-                    pre[j]=dp[i][j];  
-                }
-                
             }
         }
 
         int max=Integer.MIN_VALUE;
 
         for(int i=1; i<=m; i++){
-            if(max<dp[n][i])
-            max=dp[n][i];
+            if(max<dp[sList.size()-1][i])
+            max=dp[sList.size()-1][i];
         }
         System.out.println(max);
 
