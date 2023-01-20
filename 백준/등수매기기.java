@@ -19,11 +19,15 @@ public class 등수매기기 {
         for(int i=1; i<=n; i++){
             int temp=Integer.parseInt(br.readLine());
 
-            if(site[temp] || n<temp){
+            if(temp<=n){
+                if(!site[temp])
+                site[temp]=true;
+                else
                 list.add(temp);
             }
-            else
-            site[temp]=true;
+            else{
+                list.add(temp);
+            }
         }
 
         for(int i=1; i<=n; i++){
