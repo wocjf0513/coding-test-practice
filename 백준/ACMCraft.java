@@ -7,9 +7,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class ACMCraft {
-
-   
+public class ACMCraft {   
     
     public static void main(String[] args) throws IOException {
         //입력
@@ -18,7 +16,6 @@ public class ACMCraft {
         StringTokenizer st;
 
         for(int tN=1; tN<=t; tN++){
-        
         st=new StringTokenizer(br.readLine());
         int bN=Integer.parseInt(st.nextToken());
         int sN=Integer.parseInt(st.nextToken());
