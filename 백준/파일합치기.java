@@ -25,7 +25,7 @@ public class 파일합치기 {
 
             for(int i=1; i<=n; i++){
                 input[i]=(Integer.parseInt(st.nextToken()));
-                sum[i]=sum[i-1]+input[i]; //어차피 더해지는 과정이 있어야 하므로
+                sum[i]=sum[i-1]+input[i]; // 10 20 40 => 30 + 40== 30+ 70  or 10 + 60= 60 + 70 어차피 합이 있어야 되므로  
             }
 
             for(int i=1; i<=n; i++){
