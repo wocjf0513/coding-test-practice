@@ -10,6 +10,7 @@ public class 사회망서비스 {
         int num;
         ArrayList<Node> childs;
 
+
         Node(int i){
             num=i;
             childs=new ArrayList<>();
@@ -18,11 +19,13 @@ public class 사회망서비스 {
 
     static Node[] nodes;
     static int[][] dp;
+    static boolean[] check;
 
     public static void main(String[] args) throws IOException{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         int n=Integer.parseInt(br.readLine());
 
+        check=new boolean[n+1];
         dp=new int[n+1][2];
         //idx 0은 얼리어답터가 아닐 때, idx 1은 얼리어답터일때
 
@@ -46,13 +49,17 @@ public class 사회망서비스 {
         
         dp[cur][0]=0;
         dp[cur][1]=1;
+        check[cur]=true;
 
         for(Node node:nodes[cur].childs){
-            int tempCur=node.num;
-            dfs(tempCur);
 
+            int tempCur=node.num;
+
+            if(!check[tempCur]){
+            dfs(tempCur);
             dp[cur][0]+=dp[tempCur][1];
             dp[cur][1]+=Math.min(dp[tempCur][0],dp[tempCur][1]);
+            }
         }
         
     }

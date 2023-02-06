@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch 단어우월효과",
+            "request": "launch",
+            "mainClass": "단어우월효과",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch NM찍기",
+            "request": "launch",
+            "mainClass": "NM찍기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
