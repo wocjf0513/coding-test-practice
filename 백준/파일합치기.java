@@ -28,27 +28,23 @@ public class 파일합치기 {
                 sum[i]=sum[i-1]+input[i]; // 10 20 40 => 30 + 40== 30+ 70  or 10 + 60= 60 + 70 어차피 합이 있어야 되므로  
             }
 
-            for(int i=1; i<=n; i++){
-                for(int j=1; j+i<=n; j++){
-                    dp[j][j+i]=Integer.MAX_VALUE;
-                    for(int k=j; k<j+i; k++){
-                        dp[j][j+i]=Math.min(dp[j][j+i],dp[j][k]+dp[k+1][j+i]+sum[j+i]-sum[j-1]);
-                
+            for(int i=2; i<=n; i++){
+                for(int j=i-1; j>=1; j--){
+                    dp[j][i]=Integer.MAX_VALUE;
+                    for(int k=j; k<i; k++){
+                        dp[j][i]=Math.min(dp[j][i],dp[j][k]+dp[k+1][i]);
                     }
-                    
+                    dp[j][i]+=sum[i]-sum[j-1];
                 }
             }
-
-            for(int i=1; i<=n; i++){
-                for(int j=1; j<=n; j++){
-                    System.out.print(dp[i][j]+" ");
-                }
-                System.out.println();
-            }
+            
 
             bw.append(dp[1][n]+"\n");
             t--;
         }
+        
+            
+
         bw.flush();
         bw.close();
         br.close();
