@@ -10,16 +10,15 @@ class 보물섬{
     static char[][] map;
     static int y,x;
     static int dir[]={0,0,-1,+1};
-    static int maxT=Integer.MIN_VALUE;
-    static int maxL;
+
+    static int max=0;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st=new StringTokenizer(br.readLine());
 
         y=Integer.parseInt(st.nextToken());
         x=Integer.parseInt(st.nextToken());
-
-    
 
         String temp;
 
@@ -31,52 +30,47 @@ class 보물섬{
                 map[i][j]=temp.charAt(j-1);
             }
         }
-        //L이면 1, W면 0
-        //둘 사이의 최단 거리
-        
+
         for(int i=1; i<=y; i++){
             for(int j=1; j<=x; j++){
-                if(map[i][j]=='L'){
-                boolean check[][]=new boolean[y+1][x+1];
-                bfs(check,i,j);
-                }
+                if(map[i][j]=='L')
+                bfs(i,j);
             }
         }
 
-        System.out.println(maxT);
-
+        System.out.println(max);
 
     }
-    static void bfs(boolean[][] check, int ly, int lx){
-        check[ly][lx]=true;
-        Deque<int[]> dq=new ArrayDeque<>(y*x);
+    static void bfs(int ly, int lx){
+        Deque<int[]> dq=new ArrayDeque<>();
         dq.add(new int[]{ly,lx,0});
 
-        int temp[];
-        int Y;
-        int X;
-        int T;
+        int time=0;
+        
+        boolean[][] check=new boolean[y+1][x+1];
+        check[ly][lx]=true;
 
         while(!dq.isEmpty()){
-            temp=dq.poll();
-            check[temp[0]][temp[1]]=true;
-
-
-            if(maxT<temp[2])
-            maxT=temp[2];
+            int[] temp=dq.poll();
+            time=temp[2];
             
             for(int i=0; i<4; i++){
-                Y=temp[0]+dir[i];
-                X=temp[1]+dir[3-i];
-                T=1+temp[2];
+                int newY=temp[0]+dir[i];
+                int newX=temp[1]+dir[3-i];
 
-                if(1<=Y && Y<=y && 1<=X && X<=x){
-                    if(check[Y][X]==false && map[Y][X]=='L')
-                        dq.add(new int[]{Y,X,T});
+                if(1<=newY && 1<=newX && newY<=y && newX<=x){
+                    if(map[newY][newX]=='L' && !check[newY][newX]){
+                        dq.add(new int[]{newY,newX,time+1});
+                        check[newY][newX]=true;
+                    }
                 }
             }
-
         }
+
+        if(time>max){
+            max=time;
+        }
+
     }
 
 }
