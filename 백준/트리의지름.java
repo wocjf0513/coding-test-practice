@@ -62,7 +62,6 @@ public class 트리의지름 {
 
             calTree(x,0,x, 0,value);
 
-            value.forEach((l,y)->System.out.println(l+" "+y));
             
             long sum=0;
             List<Integer> list=value.values().stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
@@ -84,7 +83,6 @@ public class 트리의지름 {
         
     }
     public static void calTree(int startR, int cnt, int root, int sum, HashMap<Integer,Integer> vList){
-        System.out.println(startR);
         if(tree[root].childs.isEmpty()){
             if(vList.containsKey(startR)){
                 if(vList.get(startR)<sum)

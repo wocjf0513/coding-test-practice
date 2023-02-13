@@ -1,64 +1,63 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
-public class 스타트와링크 {
-    static int[][] list;
+public class 스타트와링크{
+
+    static int[][] stat;
+    static int diff=Integer.MAX_VALUE;
     static int n;
-    static int min=Integer.MAX_VALUE;
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
 
-        list=new int[n][n];
-        int member[]=new int[n];
+    public static void main(String[] args) throws IOException {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        n=Integer.parseInt(br.readLine());
 
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
-                list[i][j]=sc.nextInt();
+        stat=new int[n+1][n+1];
+
+        for(int i=1; i<=n; i++){
+            StringTokenizer st=new StringTokenizer(br.readLine());
+            for(int j=1; j<=n; j++){
+                stat[i][j]=Integer.parseInt(st.nextToken());
             }
         }
-        dfs(member,0);
+        makeTeam(new boolean[n+1], 0, n, 0);
 
-        System.out.println(min);
-        
+        System.out.println(diff);
     }
-    public static void dfs(int[] mem, int level){
-       //순서에 상관없이 같은 수열은 cal이 되면 시간이 많이 걸린다!!
 
-        if(level==n/2)
-        {
-            int temp=cal(mem);
-            if(min>temp)
-            min=temp;
-            return ;
+    public static void makeTeam(boolean[] member, int preN, int size, int cnt){
+        if(cnt==size/2){
+            calStat(member);
+            return;
         }
-        for(int i=0; i<n; i++){
-            if(mem[i]==0){
-            mem[i]=1;
-            dfs(mem,level+1);
-            mem[i]=0;
-            }
+        for(int i=preN+1; i<=size; i++){
+            member[i]=true;
+            preN=i;
+            makeTeam(member,preN,size,cnt+1);
+            member[i]=false;
         }
-        
     }
-    public static int cal(int[] mem){
-        int start=0;
+    public static void calStat(boolean[] team){
+        int stark=0;
         int link=0;
-        for(int i=0; i<mem.length; i++){
-            if(mem[i]==0){
-                //스타트
-                for(int j=0; j<mem.length; j++)
-                if(mem[j]==0)
-                    start+=list[i][j];
-            }
-            else{
-                //링크
-                for(int j=0; j<mem.length; j++)
-                if(mem[j]==1)
-                    link+=list[i][j];
-
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n; j++){
+                if(team[i] && team[j]){
+                    stark+=stat[i][j];
+                }
+                else if(!team[i] && !team[j]){
+                    link+=stat[i][j];
+                }
             }
         }
-        return Math.abs(start-link);
+
+        int localDiff=Math.abs(stark-link);
+        if(diff>localDiff){
+            diff=localDiff;
+        }
     }
     
+
 }

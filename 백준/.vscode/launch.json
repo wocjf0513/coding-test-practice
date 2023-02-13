@@ -1,0 +1,1360 @@
+
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch 이분그래프",
+            "request": "launch",
+            "mainClass": "이분그래프",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 피보나치수3",
+            "request": "launch",
+            "mainClass": "피보나치수3",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 단어우월효과",
+            "request": "launch",
+            "mainClass": "단어우월효과",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch NM찍기",
+            "request": "launch",
+            "mainClass": "NM찍기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ACMCraft",
+            "request": "launch",
+            "mainClass": "ACMCraft",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch AtoB",
+            "request": "launch",
+            "mainClass": "AtoB",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch A와B",
+            "request": "launch",
+            "mainClass": "A와B",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch BABBA",
+            "request": "launch",
+            "mainClass": "BABBA",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch FourSquares",
+            "request": "launch",
+            "mainClass": "FourSquares",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCS",
+            "request": "launch",
+            "mainClass": "LCS",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCS2",
+            "request": "launch",
+            "mainClass": "LCS2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch NQueen",
+            "request": "launch",
+            "mainClass": "NQueen",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch N과M",
+            "request": "launch",
+            "mainClass": "N과M",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_42885",
+            "request": "launch",
+            "mainClass": "Programmers_42885",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_43163",
+            "request": "launch",
+            "mainClass": "Programmers_43163",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_43164",
+            "request": "launch",
+            "mainClass": "Programmers_43164",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_carpet",
+            "request": "launch",
+            "mainClass": "Programmers_carpet",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_findprimenum",
+            "request": "launch",
+            "mainClass": "Programmers_findprimenum",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_makebigInteger",
+            "request": "launch",
+            "mainClass": "Programmers_makebigInteger",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_network",
+            "request": "launch",
+            "mainClass": "Programmers_network",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmers_targetnumber",
+            "request": "launch",
+            "mainClass": "Programmers_targetnumber",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch RGB거리2",
+            "request": "launch",
+            "mainClass": "RGB거리2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sol_124",
+            "request": "launch",
+            "mainClass": "Sol_124",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution12",
+            "request": "launch",
+            "mainClass": "Solution12",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution13",
+            "request": "launch",
+            "mainClass": "Solution13",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution14",
+            "request": "launch",
+            "mainClass": "Solution14",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution15",
+            "request": "launch",
+            "mainClass": "Solution15",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution17",
+            "request": "launch",
+            "mainClass": "Solution17",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution18",
+            "request": "launch",
+            "mainClass": "Solution18",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution19",
+            "request": "launch",
+            "mainClass": "Solution19",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution2",
+            "request": "launch",
+            "mainClass": "Solution2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution20",
+            "request": "launch",
+            "mainClass": "Solution20",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution3",
+            "request": "launch",
+            "mainClass": "Solution3",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution4",
+            "request": "launch",
+            "mainClass": "Solution4",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution5",
+            "request": "launch",
+            "mainClass": "Solution5",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution6",
+            "request": "launch",
+            "mainClass": "Solution6",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution7",
+            "request": "launch",
+            "mainClass": "Solution7",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution8",
+            "request": "launch",
+            "mainClass": "Solution8",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution9",
+            "request": "launch",
+            "mainClass": "Solution9",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1002",
+            "request": "launch",
+            "mainClass": "baekjoon_1002",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1024",
+            "request": "launch",
+            "mainClass": "baekjoon_1024",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1026",
+            "request": "launch",
+            "mainClass": "baekjoon_1026",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10870",
+            "request": "launch",
+            "mainClass": "baekjoon_10870",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11047",
+            "request": "launch",
+            "mainClass": "baekjoon_11047",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11053",
+            "request": "launch",
+            "mainClass": "baekjoon_11053",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11399",
+            "request": "launch",
+            "mainClass": "baekjoon_11399",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1149",
+            "request": "launch",
+            "mainClass": "baekjoon_1149",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1149_dfs",
+            "request": "launch",
+            "mainClass": "baekjoon_1149_dfs",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11726",
+            "request": "launch",
+            "mainClass": "baekjoon_11726",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1260",
+            "request": "launch",
+            "mainClass": "baekjoon_1260",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1436",
+            "request": "launch",
+            "mainClass": "baekjoon_1436",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1541",
+            "request": "launch",
+            "mainClass": "baekjoon_1541",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1712",
+            "request": "launch",
+            "mainClass": "baekjoon_1712",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1931",
+            "request": "launch",
+            "mainClass": "baekjoon_1931",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1932",
+            "request": "launch",
+            "mainClass": "baekjoon_1932",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2579",
+            "request": "launch",
+            "mainClass": "baekjoon_2579",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2667",
+            "request": "launch",
+            "mainClass": "baekjoon_2667",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2839",
+            "request": "launch",
+            "mainClass": "baekjoon_2839",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_43236",
+            "request": "launch",
+            "mainClass": "baekjoon_43236",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_43238",
+            "request": "launch",
+            "mainClass": "baekjoon_43238",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_4673",
+            "request": "launch",
+            "mainClass": "baekjoon_4673",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 가르침",
+            "request": "launch",
+            "mainClass": "가르침",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 가운데를말해요",
+            "request": "launch",
+            "mainClass": "가운데를말해요",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 가장긴감소하는부분수열",
+            "request": "launch",
+            "mainClass": "가장긴감소하는부분수열",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 가장긴바이오닉부분수열",
+            "request": "launch",
+            "mainClass": "가장긴바이오닉부분수열",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 가장긴증가하는부분수열4",
+            "request": "launch",
+            "mainClass": "가장긴증가하는부분수열4",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 가장큰정사각형",
+            "request": "launch",
+            "mainClass": "가장큰정사각형",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 가장큰증가부분수열",
+            "request": "launch",
+            "mainClass": "가장큰증가부분수열",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 강의실배정",
+            "request": "launch",
+            "mainClass": "강의실배정",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 거스름돈",
+            "request": "launch",
+            "mainClass": "거스름돈",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 게임개발",
+            "request": "launch",
+            "mainClass": "게임개발",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 게임을만든동준이",
+            "request": "launch",
+            "mainClass": "게임을만든동준이",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 격자상의경로",
+            "request": "launch",
+            "mainClass": "격자상의경로",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 경로찾기",
+            "request": "launch",
+            "mainClass": "경로찾기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 공일타일",
+            "request": "launch",
+            "mainClass": "공일타일",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 공통부분문자열",
+            "request": "launch",
+            "mainClass": "공통부분문자열",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 과제",
+            "request": "launch",
+            "mainClass": "과제",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 구간합구하기",
+            "request": "launch",
+            "mainClass": "구간합구하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 구간합구하기5",
+            "request": "launch",
+            "mainClass": "구간합구하기5",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 그룹단어체커",
+            "request": "launch",
+            "mainClass": "그룹단어체커",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 기타리스트",
+            "request": "launch",
+            "mainClass": "기타리스트",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 기타줄",
+            "request": "launch",
+            "mainClass": "기타줄",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 나이트의이동",
+            "request": "launch",
+            "mainClass": "나이트의이동",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 내려가기",
+            "request": "launch",
+            "mainClass": "내려가기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 누울자리를찾아라",
+            "request": "launch",
+            "mainClass": "누울자리를찾아라",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 다리놓기",
+            "request": "launch",
+            "mainClass": "다리놓기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 단어수학",
+            "request": "launch",
+            "mainClass": "단어수학",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 더하기사이클",
+            "request": "launch",
+            "mainClass": "더하기사이클",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 도서관",
+            "request": "launch",
+            "mainClass": "도서관",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 돌게임",
+            "request": "launch",
+            "mainClass": "돌게임",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 동물원",
+            "request": "launch",
+            "mainClass": "동물원",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 동전",
+            "request": "launch",
+            "mainClass": "동전",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 동전1",
+            "request": "launch",
+            "mainClass": "동전1",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 동전5",
+            "request": "launch",
+            "mainClass": "동전5",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 뒤집기",
+            "request": "launch",
+            "mainClass": "뒤집기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 등수매기기",
+            "request": "launch",
+            "mainClass": "등수매기기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 멀티탭스케줄링",
+            "request": "launch",
+            "mainClass": "멀티탭스케줄링",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 물병",
+            "request": "launch",
+            "mainClass": "물병",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 배",
+            "request": "launch",
+            "mainClass": "배",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 백줌5와6의차이",
+            "request": "launch",
+            "mainClass": "백줌5와6의차이",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 벽부수고이동하기",
+            "request": "launch",
+            "mainClass": "벽부수고이동하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 보물섬",
+            "request": "launch",
+            "mainClass": "보물섬",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 보석도둑",
+            "request": "launch",
+            "mainClass": "보석도둑",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 부녀회장이될테야",
+            "request": "launch",
+            "mainClass": "부녀회장이될테야",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 블랙잭",
+            "request": "launch",
+            "mainClass": "블랙잭",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 빙산",
+            "request": "launch",
+            "mainClass": "빙산",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 사회망서비스",
+            "request": "launch",
+            "mainClass": "사회망서비스",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 상자넣기",
+            "request": "launch",
+            "mainClass": "상자넣기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 섬의개수",
+            "request": "launch",
+            "mainClass": "섬의개수",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 세탁소사장동혁",
+            "request": "launch",
+            "mainClass": "세탁소사장동혁",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 소수와팰린드롬",
+            "request": "launch",
+            "mainClass": "소수와팰린드롬",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 수들의합",
+            "request": "launch",
+            "mainClass": "수들의합",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 수리공환승",
+            "request": "launch",
+            "mainClass": "수리공환승",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 수정렬하기",
+            "request": "launch",
+            "mainClass": "수정렬하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 수정렬하기2",
+            "request": "launch",
+            "mainClass": "수정렬하기2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 순회강연",
+            "request": "launch",
+            "mainClass": "순회강연",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 숨바꼭질",
+            "request": "launch",
+            "mainClass": "숨바꼭질",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 숨바꼭질3",
+            "request": "launch",
+            "mainClass": "숨바꼭질3",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 숫자카드",
+            "request": "launch",
+            "mainClass": "숫자카드",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 스타트와링크",
+            "request": "launch",
+            "mainClass": "스타트와링크",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 스티커",
+            "request": "launch",
+            "mainClass": "스티커",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 신나는함수실행",
+            "request": "launch",
+            "mainClass": "신나는함수실행",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 신입사원",
+            "request": "launch",
+            "mainClass": "신입사원",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 아기상어",
+            "request": "launch",
+            "mainClass": "아기상어",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 안전영역",
+            "request": "launch",
+            "mainClass": "안전영역",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 안테나",
+            "request": "launch",
+            "mainClass": "안테나",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 알고리즘수업피보나치수1",
+            "request": "launch",
+            "mainClass": "알고리즘수업피보나치수1",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 알파벳",
+            "request": "launch",
+            "mainClass": "알파벳",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 암호코드",
+            "request": "launch",
+            "mainClass": "암호코드",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 앱",
+            "request": "launch",
+            "mainClass": "앱",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 여행가자",
+            "request": "launch",
+            "mainClass": "여행가자",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 연결요소의개수",
+            "request": "launch",
+            "mainClass": "연결요소의개수",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 연산자끼워넣기",
+            "request": "launch",
+            "mainClass": "연산자끼워넣기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 연속합2",
+            "request": "launch",
+            "mainClass": "연속합2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 영역구하기",
+            "request": "launch",
+            "mainClass": "영역구하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 오르막수",
+            "request": "launch",
+            "mainClass": "오르막수",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 외판원순회",
+            "request": "launch",
+            "mainClass": "외판원순회",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 욕심쟁이판다",
+            "request": "launch",
+            "mainClass": "욕심쟁이판다",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 우선순위큐",
+            "request": "launch",
+            "mainClass": "우선순위큐",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 우선순위큐2",
+            "request": "launch",
+            "mainClass": "우선순위큐2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 이동하기",
+            "request": "launch",
+            "mainClass": "이동하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 이친수",
+            "request": "launch",
+            "mainClass": "이친수",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 이항계수2",
+            "request": "launch",
+            "mainClass": "이항계수2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 인구이동",
+            "request": "launch",
+            "mainClass": "인구이동",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 일로만들기2",
+            "request": "launch",
+            "mainClass": "일로만들기2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 일이삼더하기3",
+            "request": "launch",
+            "mainClass": "일이삼더하기3",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 일이삼더하기5",
+            "request": "launch",
+            "mainClass": "일이삼더하기5",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 일이삼더하기5b",
+            "request": "launch",
+            "mainClass": "일이삼더하기5b",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 일학년",
+            "request": "launch",
+            "mainClass": "일학년",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 저울",
+            "request": "launch",
+            "mainClass": "저울",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 적록색약",
+            "request": "launch",
+            "mainClass": "적록색약",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 전깃줄",
+            "request": "launch",
+            "mainClass": "전깃줄",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 점프",
+            "request": "launch",
+            "mainClass": "점프",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 제곱수의합",
+            "request": "launch",
+            "mainClass": "제곱수의합",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 주사위",
+            "request": "launch",
+            "mainClass": "주사위",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 주식",
+            "request": "launch",
+            "mainClass": "주식",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 주유소",
+            "request": "launch",
+            "mainClass": "주유소",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 줄세우기",
+            "request": "launch",
+            "mainClass": "줄세우기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 증가부분의수열",
+            "request": "launch",
+            "mainClass": "증가부분의수열",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 증가수열의개수",
+            "request": "launch",
+            "mainClass": "증가수열의개수",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 촌수계산",
+            "request": "launch",
+            "mainClass": "촌수계산",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 카드구매하기",
+            "request": "launch",
+            "mainClass": "카드구매하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 카드구매하기2",
+            "request": "launch",
+            "mainClass": "카드구매하기2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 카드정렬하기",
+            "request": "launch",
+            "mainClass": "카드정렬하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 카드합체놀이",
+            "request": "launch",
+            "mainClass": "카드합체놀이",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 캠핑",
+            "request": "launch",
+            "mainClass": "캠핑",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 커트라인",
+            "request": "launch",
+            "mainClass": "커트라인",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 컵홀더",
+            "request": "launch",
+            "mainClass": "컵홀더",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 케빈베이컨의6단계법칙",
+            "request": "launch",
+            "mainClass": "케빈베이컨의6단계법칙",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 크게만들기",
+            "request": "launch",
+            "mainClass": "크게만들기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 타일링2",
+            "request": "launch",
+            "mainClass": "타일링2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 타일채우기",
+            "request": "launch",
+            "mainClass": "타일채우기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 토마토",
+            "request": "launch",
+            "mainClass": "토마토",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 통나무건너뛰기",
+            "request": "launch",
+            "mainClass": "통나무건너뛰기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 퇴사",
+            "request": "launch",
+            "mainClass": "퇴사",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 트리",
+            "request": "launch",
+            "mainClass": "트리",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 트리의부모찾기",
+            "request": "launch",
+            "mainClass": "트리의부모찾기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 트리의지름",
+            "request": "launch",
+            "mainClass": "트리의지름",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 파도반수열",
+            "request": "launch",
+            "mainClass": "파도반수열",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 파이프옮기기5",
+            "request": "launch",
+            "mainClass": "파이프옮기기5",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 파일합치기",
+            "request": "launch",
+            "mainClass": "파일합치기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 파일합치기3",
+            "request": "launch",
+            "mainClass": "파일합치기3",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 팰린드롬만들기",
+            "request": "launch",
+            "mainClass": "팰린드롬만들기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 펠린드롬",
+            "request": "launch",
+            "mainClass": "펠린드롬",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 평범한배낭2",
+            "request": "launch",
+            "mainClass": "평범한배낭2",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 폴리오미노",
+            "request": "launch",
+            "mainClass": "폴리오미노",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 피보나치수4",
+            "request": "launch",
+            "mainClass": "피보나치수4",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 하노이탑이동순서",
+            "request": "launch",
+            "mainClass": "하노이탑이동순서",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 한수",
+            "request": "launch",
+            "mainClass": "한수",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 합분해",
+            "request": "launch",
+            "mainClass": "합분해",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 행렬",
+            "request": "launch",
+            "mainClass": "행렬",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 행렬곱셈순서",
+            "request": "launch",
+            "mainClass": "행렬곱셈순서",
+            "projectName": "백준_92f12852"
+        }
+    ]
+}
