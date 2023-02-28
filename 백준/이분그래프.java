@@ -1,32 +1,38 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
+import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class 이분그래프 {
 
     static class Graph{
-        int color;
+        boolean color;
         ArrayList<Integer> link=new ArrayList<>();
     }
 
     static Graph[] graph;
-    static boolean isBinaryGraph;
+    static boolean isBipartiteGraph;
+    static int v;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
         int k=Integer.parseInt(br.readLine());
         StringTokenizer st;
         while(k>0){
-            isBinaryGraph=true;
+            isBipartiteGraph=true;
 
             st=new StringTokenizer(br.readLine());
-            int v=Integer.parseInt(st.nextToken());
+            v=Integer.parseInt(st.nextToken());
             int e=Integer.parseInt(st.nextToken());
 
+            
             graph=new Graph[v+1];
             for(int i=1; i<=v; i++){
                 graph[i]=new Graph();
@@ -40,37 +46,47 @@ public class 이분그래프 {
 
                 graph[two].link.add(one);
             }
-
-            paint(1,1);
-
-            if(isBinaryGraph)
-            System.out.println("YES");
+            boolean vCheck[]=new boolean[v+1];
+            
+            if(paint(vCheck))
+            bw.append("YES\n");
             else
-            System.out.println("NO");
+            bw.append("NO\n");
 
             k--;
         }
+        bw.flush();
+        br.close();
+        bw.close();
     }
-    public static void paint(int num, int color){
+    public static boolean paint(boolean[] vCheck){
+        
+        Deque<Integer> dq=new LinkedList<>();
 
-        if(!isBinaryGraph)
-        return;
-
-
-        if(graph[num].color!=0)
-        {
-            if(graph[num].color!=color){
-            isBinaryGraph=false;
+        for(int i=1; i<=v; i++){
+            if(!vCheck[i]){
+                dq.add(i);
+                vCheck[i]=true;
+                graph[i].color=true;
             }
-            return;
-        }
+            while(!dq.isEmpty()){
+                int cur=dq.poll();
 
-        graph[num].color=color;
-
-    
-        for(int n:graph[num].link){
-            paint(n,(color+1)%2);
+                for(int n:graph[cur].link){
+                    if(!vCheck[n]){
+                        dq.add(n);
+                        vCheck[n]=true;
+                        graph[n].color=!graph[cur].color;
+                    }
+                    else{
+                        if(graph[n].color==graph[cur].color)
+                        return false;
+                    }
+                }
+            }
         }
+        return true;
     }
-    
+    //갔던 간선이 아닌 간선은 가도 돼 (갔던건 안 가게)
+    //check 했던 건데 색깔이 다르면 false
 }

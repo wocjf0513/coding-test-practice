@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch 탈출",
+            "request": "launch",
+            "mainClass": "탈출",
+            "projectName": "코테_e0d65f8c"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

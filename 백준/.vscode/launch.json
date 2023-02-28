@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch 빵집",
+            "request": "launch",
+            "mainClass": "빵집",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Launch 작업",
+            "request": "launch",
+            "mainClass": "작업",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "Launch 플로이드",
             "request": "launch",
             "mainClass": "플로이드",
