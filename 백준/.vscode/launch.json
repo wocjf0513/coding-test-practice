@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UCPC는무엇의약자일까",
+            "request": "launch",
+            "mainClass": "UCPC는무엇의약자일까",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "GenerationsOfTribbles",
+            "request": "launch",
+            "mainClass": "GenerationsOfTribbles",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "Launch 빵집",
             "request": "launch",
             "mainClass": "빵집",
