@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "스네이크버드",
+            "request": "launch",
+            "mainClass": "스네이크버드",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "계단수",
+            "request": "launch",
+            "mainClass": "계단수",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "UCPC는무엇의약자일까",
             "request": "launch",
             "mainClass": "UCPC는무엇의약자일까",
