@@ -8,6 +8,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "사전",
+            "request": "launch",
+            "mainClass": "사전",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "국회의원선거",
+            "request": "launch",
+            "mainClass": "국회의원선거",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "연속부분최대곱",
+            "request": "launch",
+            "mainClass": "연속부분최대곱",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "스네이크버드",
             "request": "launch",
             "mainClass": "스네이크버드",
