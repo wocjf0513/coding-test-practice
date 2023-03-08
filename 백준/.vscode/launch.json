@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "자두나무",
+            "request": "launch",
+            "mainClass": "자두나무",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "돌게임3",
+            "request": "launch",
+            "mainClass": "돌게임3",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "사전",
             "request": "launch",
             "mainClass": "사전",
