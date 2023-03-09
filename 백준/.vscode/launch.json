@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "팰린드롬분활",
+            "request": "launch",
+            "mainClass": "팰린드롬분활",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "떡먹는호랑이",
+            "request": "launch",
+            "mainClass": "떡먹는호랑이",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "자두나무",
             "request": "launch",
             "mainClass": "자두나무",
