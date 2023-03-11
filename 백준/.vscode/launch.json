@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "로봇조종하기",
+            "request": "launch",
+            "mainClass": "로봇조종하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "파스칼의삼각형",
+            "request": "launch",
+            "mainClass": "파스칼의삼각형",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "팰린드롬분활",
             "request": "launch",
             "mainClass": "팰린드롬분활",
