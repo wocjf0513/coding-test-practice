@@ -8,6 +8,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LCS3",
+            "request": "launch",
+            "mainClass": "LCS3",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "로봇조종하기",
             "request": "launch",
             "mainClass": "로봇조종하기",
