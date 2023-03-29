@@ -86,7 +86,6 @@ public class 도서관 {
                     cnt++;
                 }
             }
-            System.out.println(move);
             //처음 큰 거 하나 한번 갔다오기
 
             cnt=0; 

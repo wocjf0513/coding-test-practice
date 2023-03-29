@@ -8,6 +8,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "게임",
+            "request": "launch",
+            "mainClass": "게임",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "MaximumSubarray",
+            "request": "launch",
+            "mainClass": "MaximumSubarray",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "알약",
+            "request": "launch",
+            "mainClass": "알약",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "안녕",
+            "request": "launch",
+            "mainClass": "안녕",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "LCS3",
             "request": "launch",
             "mainClass": "LCS3",
