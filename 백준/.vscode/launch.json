@@ -8,6 +8,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "지름길",
+            "request": "launch",
+            "mainClass": "지름길",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "줄어들지않아",
+            "request": "launch",
+            "mainClass": "줄어들지않아",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "일이삼더하기4",
+            "request": "launch",
+            "mainClass": "일이삼더하기4",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "무한수열",
+            "request": "launch",
+            "mainClass": "무한수열",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "MemoryGame",
+            "request": "launch",
+            "mainClass": "MemoryGame",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "색상환",
+            "request": "launch",
+            "mainClass": "색상환",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "최소스패닝트리",
+            "request": "launch",
+            "mainClass": "최소스패닝트리",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "게임",
             "request": "launch",
             "mainClass": "게임",
