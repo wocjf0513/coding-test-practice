@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "피보나치수의확장",
+            "request": "launch",
+            "mainClass": "피보나치수의확장",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "병사배치하기",
+            "request": "launch",
+            "mainClass": "병사배치하기",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "지름길",
             "request": "launch",
             "mainClass": "지름길",
