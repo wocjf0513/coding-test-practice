@@ -8,6 +8,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KCMTravel",
+            "request": "launch",
+            "mainClass": "KCMTravel",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "크리보드",
+            "request": "launch",
+            "mainClass": "크리보드",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "카드게임",
+            "request": "launch",
+            "mainClass": "카드게임",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "피보나치수의확장",
             "request": "launch",
             "mainClass": "피보나치수의확장",
