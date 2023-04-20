@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "돌게임4",
+            "request": "launch",
+            "mainClass": "돌게임4",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "고층빌딩",
+            "request": "launch",
+            "mainClass": "고층빌딩",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "KCMTravel",
             "request": "launch",
             "mainClass": "KCMTravel",
