@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "시험감독",
+            "request": "launch",
+            "mainClass": "시험감독",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
+            "name": "뮤탈리스크",
+            "request": "launch",
+            "mainClass": "뮤탈리스크",
+            "projectName": "백준_92f12852"
+        },
+        {
+            "type": "java",
             "name": "돌게임4",
             "request": "launch",
             "mainClass": "돌게임4",

@@ -31,7 +31,6 @@ public class 돌게임4 {
 
             System.out.println("SK");
         }
-
         
     }
     
