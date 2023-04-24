@@ -8,6 +8,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "호텔",
+            "request": "launch",
+            "mainClass": "호텔",
+            "projectName": "백준_56076e63"
+        },
+        {
+            "type": "java",
             "name": "시험감독",
             "request": "launch",
             "mainClass": "시험감독",
