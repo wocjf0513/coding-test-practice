@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "타일링",
+            "request": "launch",
+            "mainClass": "타일링",
+            "projectName": "백준_56076e63"
+        },
+        {
+            "type": "java",
+            "name": "선수과목",
+            "request": "launch",
+            "mainClass": "선수과목",
+            "projectName": "백준_56076e63"
+        },
+        {
+            "type": "java",
             "name": "호텔",
             "request": "launch",
             "mainClass": "호텔",
