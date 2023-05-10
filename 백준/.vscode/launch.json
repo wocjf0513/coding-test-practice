@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "벼락치기",
+            "request": "launch",
+            "mainClass": "벼락치기",
+            "projectName": "백준_56076e63"
+        },
+        {
+            "type": "java",
+            "name": "동전바꿔주기",
+            "request": "launch",
+            "mainClass": "동전바꿔주기",
+            "projectName": "백준_56076e63"
+        },
+        {
+            "type": "java",
             "name": "타일링",
             "request": "launch",
             "mainClass": "타일링",
