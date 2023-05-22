@@ -24,7 +24,8 @@ public class 벼락치기 {
             dp[i][k]=s;
 
                 for(int j=1; j<=t; j++){
-                    dp[i][j]=Math.max(dp[i][j-1],dp[i-1][j]);
+                    dp[i][j]=Math.max(dp[i][j],dp[i][j-1]);
+                    dp[i][j]=Math.max(dp[i][j],dp[i-1][j]);
                     
                     if(j>k)
                     dp[i][j]=Math.max(dp[i][j],s+dp[i-1][j-k]);

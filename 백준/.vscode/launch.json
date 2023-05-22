@@ -8,6 +8,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "장난감조립",
+            "request": "launch",
+            "mainClass": "장난감조립",
+            "projectName": "백준_56076e63"
+        },
+        {
+            "type": "java",
             "name": "벼락치기",
             "request": "launch",
             "mainClass": "벼락치기",
