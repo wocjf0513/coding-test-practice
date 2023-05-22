@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "좋은수열",
+            "request": "launch",
+            "mainClass": "좋은수열",
+            "projectName": "백준_63e09206"
+        },
+        {
+            "type": "java",
+            "name": "도로포장",
+            "request": "launch",
+            "mainClass": "도로포장",
+            "projectName": "백준_63e09206"
+        },
+        {
+            "type": "java",
             "name": "장난감조립",
             "request": "launch",
             "mainClass": "장난감조립",
