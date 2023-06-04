@@ -8,6 +8,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "회사문화1",
+            "request": "launch",
+            "mainClass": "회사문화1",
+            "projectName": "백준_3c51b4c7"
+        },
+        {
+            "type": "java",
+            "name": "이항계수3",
+            "request": "launch",
+            "mainClass": "이항계수3",
+            "projectName": "백준_3c51b4c7"
+        },
+        {
+            "type": "java",
             "name": "좋은수열",
             "request": "launch",
             "mainClass": "좋은수열",
