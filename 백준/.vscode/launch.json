@@ -8,6 +8,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "로봇청소기",
+            "request": "launch",
+            "mainClass": "로봇청소기",
+            "projectName": "백준_3c51b4c7"
+        },
+        {
+            "type": "java",
             "name": "회사문화1",
             "request": "launch",
             "mainClass": "회사문화1",

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "뱀",
+            "request": "launch",
+            "mainClass": "뱀",
+            "projectName": "알고리즘 공부_81d2f37"
+        },
+        {
+            "type": "java",
+            "name": "프린터큐",
+            "request": "launch",
+            "mainClass": "프린터큐",
+            "projectName": "알고리즘 공부_81d2f37"
+        },
+        {
+            "type": "java",
+            "name": "미세먼지안녕",
+            "request": "launch",
+            "mainClass": "미세먼지안녕",
+            "projectName": "알고리즘 공부_81d2f37"
+        },
+        {
+            "type": "java",
             "name": "Launch 탈출",
             "request": "launch",
             "mainClass": "탈출",
