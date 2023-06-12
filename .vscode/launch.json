@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "이공사팔",
+            "request": "launch",
+            "mainClass": "이공사팔",
+            "projectName": "알고리즘 공부_81d2f37"
+        },
+        {
+            "type": "java",
+            "name": "구슬탈출2",
+            "request": "launch",
+            "mainClass": "구슬탈출2",
+            "projectName": "알고리즘 공부_81d2f37"
+        },
+        {
+            "type": "java",
             "name": "뱀",
             "request": "launch",
             "mainClass": "뱀",

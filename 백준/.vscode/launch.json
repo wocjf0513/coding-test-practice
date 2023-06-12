@@ -8,6 +8,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "비숍",
+            "request": "launch",
+            "mainClass": "비숍",
+            "projectName": "백준_3c51b4c7"
+        },
+        {
+            "type": "java",
+            "name": "나무재테크",
+            "request": "launch",
+            "mainClass": "나무재테크",
+            "projectName": "백준_3c51b4c7"
+        },
+        {
+            "type": "java",
+            "name": "낚시왕",
+            "request": "launch",
+            "mainClass": "낚시왕",
+            "projectName": "백준_3c51b4c7"
+        },
+        {
+            "type": "java",
             "name": "로봇청소기",
             "request": "launch",
             "mainClass": "로봇청소기",
