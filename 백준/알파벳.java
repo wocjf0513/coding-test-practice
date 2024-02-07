@@ -2,83 +2,62 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
 public class 알파벳 {
 
-    static String[] alpa;
-    static int[] dir=new int[]{0,0,+1,-1};
+    /*
+    * 세로 R칸, 가로 C칸
+    * 좌측 상단 칸에 말
+    *
+    * 새로 이동한 칸에 적혀있는 알파벳은 지금까지 지나온 모든 칸과 달라야 한다.
+    *
+    * 최대한 몇 칸 지날 수 있는지? (좌측 상단 칸 포함)
+    * */
+    static int[][] board;
     static int y,x;
-    static int max=Integer.MIN_VALUE;
-
+    static int maxDeep = 1;
+    static int[] dir = {0,0,-1,+1};
     public static void main(String[] args) throws IOException {
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st=new StringTokenizer(br.readLine());
-        y=Integer.parseInt(st.nextToken());
-        x=Integer.parseInt(st.nextToken());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st =new StringTokenizer(br.readLine());
+        y= Integer.parseInt(st.nextToken());
+        x= Integer.parseInt(st.nextToken());
+        board = new int[y+1][x+1];
 
-        alpa=new String[y];
-        for(int i=0; i<y; i++){
-            alpa[i]=br.readLine();
+        for (int i = 1; i <= y; i++) {
+            String inputAlphabat = br.readLine();
+            for (int j = 1; j <= x; j++) {
+                board[i][j] = inputAlphabat.charAt(j-1) - 'A';
+            }
         }
 
-        //대문자 26개 
+        boolean[] checkAlphabat = new boolean[100];
+        checkAlphabat[board[1][1]] = true;
 
-        int check=1<<(alpa[0].charAt(0)-'A');
-        dfs(0,0,1,check);
-
-        System.out.println(max);
-
+        dfs(checkAlphabat, 1, 1, 1);
+        System.out.println(maxDeep);
     }
-    public static void dfs(int ly, int lx, int cnt, int check){
+    private static void dfs(boolean[] checkAlphabat, int curY, int curX, int deep) {
 
-        for(int i=0; i<4; i++){
-            int nY=ly+dir[i];
-            int nX=lx+dir[3-i];
-            if(0<=nY && 0<=nX && nY<y && nX<x){
-                int curIdx=1<<(alpa[nY].charAt(nX)-'A');
-                if((check&curIdx)!=curIdx){
-                    dfs(nY,nX,cnt+1,check|curIdx);
-                }
-                else{
-                    if(max<cnt)
-                    max=cnt;
-                }
+        if(deep > maxDeep) {
+            maxDeep = deep;
+        }
+
+        for (int i = 0; i < 4; i++) {
+            int yToMove = curY + dir[i];
+            int xToMove = curX + dir[3-i];
+
+            if(isAvailablePoint(yToMove, xToMove) && !checkAlphabat[board[yToMove][xToMove]]) {
+                checkAlphabat[board[yToMove][xToMove]] = true;
+                dfs(checkAlphabat, yToMove, xToMove, deep+1);
+                checkAlphabat[board[yToMove][xToMove]] = false;
             }
         }
     }
-    
+    private static boolean isAvailablePoint(int curY, int curX) {
+        return 1<= curX && curX <=x && 1<=curY && curY<=y;
+    }
 }
-
-
-
-// Deque<int[]> dq=new ArrayDeque<>();
-//         dq.add(new int[]{0,0,1,1<<(alpa[0].charAt(0)-'A')});
-
-//         while(!dq.isEmpty()){
-//             int[] temp=dq.poll();
-//             int nextCnt=temp[2]+1;
-//             int check=temp[3];
-
-//             if(max<nextCnt-1){
-//                 max=nextCnt-1;
-//             }
-
-//             for(int i=0; i<4; i++){
-//                 int nY=dir[i]+temp[0];
-//                 int nX=dir[3-i]+temp[1];
-
-//                 if(0<=nY && nY<y && 0<=nX && nX<x){
-//                     int cur=1<<(alpa[nY].charAt(nX)-'A');
-//                     if((check&cur)==cur){
-                        
-//                     }
-//                     else{
-//                         dq.add(new int[]{nY,nX,nextCnt,check|cur});
-//                     }
-//                 }
-//             }
-//         }
-
-//         System.out.println(max);
