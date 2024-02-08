@@ -1,86 +1,93 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.HashMap;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class 최소스패닝트리 {
 
-    static long minV=Long.MAX_VALUE;
+    /*
+     * 최소 스패닝 트리: 모든 정점을 연결하는 그래프 중 가중치가 최소인 그래프
+     */
 
-    public static class Node{
-        HashMap<Integer,Integer> edge;
+    /*
+     * 정점 간선
+     * 간선 정보 가중치*/
 
-        Node(){
-            edge=new HashMap<>();
+    static int[] parentByVertex;
+    static class Edge {
+
+        public Edge(int startVertex, int endVertex, int value) {
+            this.startVertex = startVertex;
+            this.endVertex = endVertex;
+            this.value = value;
+        }
+
+        int startVertex;
+        int endVertex;
+        int value;
+
+        public int getStartVertex() {
+            return startVertex;
         }
     }
 
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
+        int vertex = Integer.parseInt(st.nextToken());
+        int edge = Integer.parseInt(st.nextToken());
+        parentByVertex = new int[vertex + 1];
 
-    public static void main(String[] args) throws IOException{
-        //정점 간선 개수
+        for (int i = 1; i <= vertex; i++) {
+            parentByVertex[i] = i;
+        }
+        PriorityQueue<Edge> pq = new PriorityQueue<>(new Comparator<Edge>() {
+            @Override
+            public int compare(Edge o1, Edge o2) {
+                return o1.value - o2.value;
+            }
+        });
 
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
-
-        StringTokenizer st=new StringTokenizer(br.readLine());
-        int n=Integer.parseInt(st.nextToken());
-        int e=Integer.parseInt(st.nextToken());
-
-        Node[] nodes=new Node[n+1];
-
-        for(int i=1; i<=n; i++){
-            nodes[i]=new Node();
+        for (int i = 0; i < edge; i++) {
+            st = new StringTokenizer(br.readLine());
+            pq.add(new Edge(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()),
+                Integer.parseInt(st.nextToken())));
         }
 
+        int answer = 0;
+        int selectedEdgeCount = 0;
 
-        for(int i=1; i<=n; i++){
-            st=new StringTokenizer(br.readLine());
-            int v1=Integer.parseInt(st.nextToken()); 
-            int v2=Integer.parseInt(st.nextToken()); 
-            int val=Integer.parseInt(st.nextToken());
+        while (selectedEdgeCount < vertex - 1) {
+            Edge polledEdge = pq.poll();
 
-            nodes[v1].edge.put(v2, val);
-            nodes[v2].edge.put(v1, val);
+            int startVertexParent = findHighestParent(polledEdge.startVertex);
+            int endVertexParent = findHighestParent(polledEdge.endVertex);
+            if(findHighestParent(startVertexParent) == findHighestParent(endVertexParent)) {
+                continue;
+            }
+
+            int smallerVertexParent = Math.min(startVertexParent, endVertexParent);
+
+            parentByVertex[startVertexParent] = smallerVertexParent;
+            parentByVertex[endVertexParent] = smallerVertexParent;
+
+            answer += polledEdge.value;
+            selectedEdgeCount++;
         }
 
-        search(nodes, 1, new boolean[n], 0);
-        System.out.println(minV);
+        System.out.println(answer);
     }
-    public static void search(Node[] nodes,int idx, boolean[] check, long sum){
-
-        boolean isEnd=true;
-
-        check[idx-1]=true;
-
-        for(boolean b:check){
-            if(b){
-
-            }
-            else{
-                isEnd=false;
-            }
-        }
-
-        if(isEnd)
-        {
-            if(minV>sum){
-                minV=sum;
-                return;
-            }
-        }
-        HashMap<Integer,Integer> nodeE=nodes[idx].edge;
-
-        
-
-        for(int n:nodeE.keySet()){
-            if(!check[n-1]){
-                search(nodes, n, check, sum+=nodeE.get(n));
-            }
+    public static int findHighestParent(int vertex) {
+        if(vertex == parentByVertex[vertex]) {
+            return vertex;
+        } else {
+            return parentByVertex[vertex] = findHighestParent(parentByVertex[vertex]);
         }
     }
-    
 }
