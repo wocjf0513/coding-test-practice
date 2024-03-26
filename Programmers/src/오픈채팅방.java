@@ -22,7 +22,6 @@ public class 오픈채팅방 {
             Arrays.stream(record).forEach(str->{
                 if(str.startsWith("Enter")) {
                     String[] parsedOrder = str.split(" ");
-                    result.add(nickNameMap.get(parsedOrder[1])+"님이 들어왔습니다.");
                 } else if(str.startsWith("Leave")) {
                     String[] parsedOrder = str.split(" ");
                     result.add(nickNameMap.get(parsedOrder[1])+"님이 나갔습니다.");
