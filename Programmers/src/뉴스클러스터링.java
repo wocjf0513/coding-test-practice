@@ -3,8 +3,6 @@ import java.util.stream.Stream;
 
 public class 뉴스클러스터링 {
 
-    import java.util.*;
-
     class Solution {
 
         HashMap<String, Integer> matrix1 = new HashMap<>();
