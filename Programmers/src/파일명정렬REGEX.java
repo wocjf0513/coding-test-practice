@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 
-public class 파일명정렬 {
+public class 파일명정렬REGEX {
 
     public static void main(String[] args) {
         파일명정렬 file = new 파일명정렬();
@@ -49,32 +49,15 @@ public class 파일명정렬 {
 
         return newFiles.stream().map(File::toString).toArray(String[] :: new);
     }
-    public File splitFormat(String file) {
-        int numberStartIdx = 0;
-        int numberEndIdx = 0;
-        int tmpIdx = 0;
+        public File splitFormat(String file) {
 
-        for(char c : file.toCharArray()) {
-            if(numberStartIdx == 0 && '0' <= c && c <= '9') {
-                numberStartIdx = tmpIdx;
-            } else if ('0' <= c && c <= '9'){
+            String[] files= file.split("(0-9)",2);
+            String[] number = file.split("!(0-9)",1);
 
-            }
-            else {
-                if (numberStartIdx != 0) {
-                    numberEndIdx = tmpIdx - 1;
-                    break;
-                }
-            }
-            tmpIdx ++;
+            return new File(files[0],
+                number[0],
+                files.length == 1? "":files[2]);
         }
-
-
-
-        return new File(file.substring(0, numberStartIdx),
-            numberEndIdx == 0? file.substring(numberStartIdx) : file.substring(numberStartIdx, numberEndIdx + 1),
-            numberEndIdx == 0? "" : file.substring(numberEndIdx + 1));
-    }
 
 //head 는 사전 순
 // number는 작은 순
